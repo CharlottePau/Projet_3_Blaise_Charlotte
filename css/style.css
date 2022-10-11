@@ -5,9 +5,240 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: 0 15px 10px -15px rgb(207, 205, 207);
-    }
+}
 
-    header img {
-        height: 25px;
-        margin: 20px 0px 10px;
-    }
+header img {
+    height: 25px;
+    margin: 20px 0px 10px;
+}
+
+.location {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0px 15px 65px;
+    box-shadow: inset 0 5px 10px -10px;
+}
+
+.location i {
+    cursor: pointer;
+}
+
+.location input {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(235, 235, 235);
+    border: none;
+}
+
+.presentation {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 0px 10px 70px;
+}
+
+.presentation h1 {
+    font-weight: 900;
+    padding: 40px 0px 10px;
+    max-width: 250px;
+    margin: auto;
+    font-size: 24px;
+}
+
+.presentation p {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+
+.btn {
+    margin: auto;
+    width: 225px;
+    background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: 0px 5px 15px -10px;
+    padding: 15px 0px;
+    border-radius: 30px;
+}
+
+.btn a {
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+.btn a span {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+aside {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.main-titles {
+    font-weight: 900;
+    font-size: 24px;
+    padding: 50px 0px 20px;
+}
+
+aside .bloc-guide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+aside .bloc-guide .guide {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 260px;
+    max-width: 310px;
+    background-color: rgb(245, 245, 245);
+    padding: 25px 0px;
+    border-radius: 20px;
+    margin: 5px 0px 20px 10px;
+    box-shadow: 0px 3px 15px -10px;
+    cursor: pointer;
+}
+
+aside .bloc-guide .guide .round {
+    color: white;
+    padding: 3px 8px;
+    background-color: #9356dc;
+    border-radius: 100%;
+    font-size: 14px;
+    margin: 0px 15px 0px -10px;
+}
+
+aside .bloc-guide .guide i {
+    color: gray;
+    padding-right: 20px;
+}
+
+aside .bloc-guide .guide span h3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#restaurants {
+    background-color: rgb(245, 245, 245);
+}
+
+#restaurants h2 {
+    width: 90%;
+    margin: auto;
+}
+
+#restaurants .bloc-restaurant {
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+#restaurants .bloc-restaurant .restaurant {
+    width: 100%;
+    min-width: 275px;
+    max-width: 325px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 3px 15px -10px;
+}
+
+#restaurants .bloc-restaurant .restaurant a {
+    text-decoration: none;
+    color: black;
+}
+
+#restaurants .bloc-restaurant .restaurant a img {
+    object-fit: cover;
+    object-position: left bottom;
+    width: 100%;
+    height: 69%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#restaurants .bloc-restaurant .restaurant a .nouveau {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 7px 12px 4px;
+    border-radius: 2px;
+    background-color: #99e2d0;
+    color: green;
+    font-size: 15px;
+    font-weight: 1000;
+}
+
+#restaurants .bloc-restaurant .restaurant a h3 {
+    padding: 15px 0px 3px 10px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#restaurants .bloc-restaurant .restaurant a p {
+    padding: 0px 0px 15px 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#restaurants .bloc-restaurant .restaurant .fa-heart {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
+
+footer {
+    background-color: rgb(50 50 50);
+    color: white;
+}
+
+footer .bloc-footer {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+footer .bloc-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .bloc-footer h2 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px 0px;
+}
+
+footer .bloc-footer nav ul {
+    list-style: none;
+    font-size: 16px;
+    padding: 0px;
+}
+
+footer .bloc-footer nav ul li {
+    padding-bottom: 8px;
+    font-size: 15px;
+}
+
+footer .bloc-footer nav ul li a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 500;
+}
+
+footer .bloc-footer nav ul li a i {
+    width: 15px;
+}
