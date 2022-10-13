@@ -1,0 +1,22 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/sass/style.scss:./css/style-sass.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlottePau/Projet_3_Blaise_Charlotte.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlottePau/Projet_3_Blaise_Charlotte/issues"
+  },
+  "homepage": "https://github.com/CharlottePau/Projet_3_Blaise_Charlotte#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
