@@ -1,28 +1,23 @@
 .loader {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    vertical-align: middle;
+    background: linear-gradient(#ff79da, #9356dc);
+    height: 100vh;
+    inset: 0;
+    position: fixed;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disappear 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    transform-origin: top;
+    display: grid;
+    place-items: center;
 }
 
-.loader-quart {
-    border-radius: 50px;
-    border: 6px solid #9356dc;
-}
-
-.loader-quart:after {
-    position: absolute;
-    border: 6px solid transparent;
-    border-top-color: #fff;
-    top: -6px; left: -6px;
-    bottom: -6px; right: -6px;
-    content: '';
-    border-radius: 50px;
-    animation:spin 1s linear infinite;
-}
-
-@keyframes spin{
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+@keyframes disappear {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
 }
