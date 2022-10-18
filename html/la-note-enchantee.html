@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/restaurants.css">
+    <link rel="stylesheet" href="../css/menus.css">
     <script src="https://kit.fontawesome.com/0ff365a153.js" crossorigin="anonymous"></script>
     <title>Ohmyfood! - Menu La note enchantée</title>
 
@@ -30,11 +31,10 @@
             <div class="bloc-menu">
                 <div class="bloc-titre">
                     <h1>La note enchantée</h1>
-                    <input type="checkbox" id="heart">
-                    <label for="heart">
-                        <i class="fa-regular fa-heart fa-xl"></i>
-                        <i class="fa-sharp fa-solid fa-heart heart-full fa-xl"></i>
-                    </label>
+                    <div class="like fa-stack">
+                        <i class="fa-solid fa-heart fa-stack-1x"></i>
+                        <i class="fa-regular fa-heart fa-stack-1x"></i>
+                    </div>
                 </div>
 
                 <section class="entree">
@@ -187,24 +187,27 @@
 
     <footer>
         <div class="bloc-footer">
-          <a href="#" title="Ohmyfood!"><h2>ohmyfood</h2></a>
-          <nav>
-            <ul>
-              <li><a href="#" title="Proposer un restaurant">
-                  <i class="fa-solid fa-utensils fa-xs"></i>
-                  <span>Proposer un restaurant</span></a></li>
-  
-              <li><a href="#" title="Devenir partenaire">
-                  <i class="fa-solid fa-handshake-angle fa-xs"></i>
-                  <span>Devenir partenaire</span></a></li>
-  
-              <li><a href="#" title="Mentions légales">Mentions légales</a></li>
-              <li>
-                <a href="mailto:ohmyfood@gmail.com" title="Contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
+            <a href="#" title="Ohmyfood!">
+                <h2>ohmyfood</h2>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" title="Proposer un restaurant">
+                            <i class="fa-solid fa-utensils fa-xs"></i>
+                            <span>Proposer un restaurant</span></a></li>
+
+                    <li><a href="#" title="Devenir partenaire">
+                            <i class="fa-solid fa-handshake-angle fa-xs"></i>
+                            <span>Devenir partenaire</span></a></li>
+
+                    <li><a href="#" title="Mentions légales">Mentions légales</a></li>
+                    <li>
+                        <a href="mailto:ohmyfood@gmail.com" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </footer>
-    </body>
-  </html>
+    </footer>
+</body>
+
+</html>
