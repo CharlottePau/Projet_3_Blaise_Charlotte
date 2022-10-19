@@ -143,12 +143,18 @@ header img {
 
 .btn {
     margin: auto;
-    width: 125px;
+    width: fit-content;
     background: linear-gradient(#ff79da, #9356dc);
     box-shadow: 0px 5px 15px -10px;
     border-radius: 30px;
     padding: 15px 0px;
 }
+
+.btn:hover {
+    background: linear-gradient(#ff79da, #ff79da, #9356dc);
+    box-shadow: 0px 10px 25px -10px;
+    transition: 0.2s;
+  }
 
 .btn a {
     text-decoration: none;
@@ -157,7 +163,7 @@ header img {
 
 .btn a span {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 800;
     color: white;
 }
 
@@ -165,6 +171,10 @@ footer {
     background-color: rgb(50 50 50);
     color: white;
 }
+
+footer .bloc-footer a:hover {
+    color: rgb(172, 164, 164);
+  } 
 
 footer .bloc-footer {
     width: 90%;

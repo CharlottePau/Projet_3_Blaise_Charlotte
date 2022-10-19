@@ -34,7 +34,7 @@ header img {
 
 .location input {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     background-color: rgb(235, 235, 235);
     border: none;
 }
@@ -61,12 +61,18 @@ header img {
 
 .btn {
     margin: auto;
-    width: 225px;
+    width: fit-content;
     background: linear-gradient(#ff79da, #9356dc);
     box-shadow: 0px 5px 15px -10px;
     padding: 15px 0px;
     border-radius: 30px;
 }
+
+.btn:hover {
+    background: linear-gradient(#ff79da, #ff79da, #9356dc);
+    box-shadow: 0px 10px 25px -10px;
+    transition: 0.2s;
+  }
 
 .btn a {
     text-decoration: none;
@@ -75,7 +81,7 @@ header img {
 
 .btn a span {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 800;
     color: white;
 }
 
@@ -86,7 +92,7 @@ aside {
 }
 
 .main-titles {
-    font-weight: 900;
+    font-weight: 1000;
     font-size: 24px;
     padding: 50px 0px 20px;
 }
@@ -111,6 +117,13 @@ aside .bloc-guide .guide {
     box-shadow: 0px 3px 15px -10px;
     cursor: pointer;
 }
+
+aside .bloc-guide .guide:hover {
+    background-color: rgb(247, 236, 255);
+  }
+  aside .bloc-guide .guide:hover i {
+    color: #9356dc;
+  }
 
 aside .bloc-guide .guide .round {
     color: white;
@@ -171,6 +184,11 @@ aside .bloc-guide .guide span h3 {
     box-shadow: 0px 3px 15px -10px;
 }
 
+#restaurants .bloc-restaurant .restaurant:hover {
+    transform: scale(1.015);
+    transition: 0.4s;
+  }
+
 #restaurants .bloc-restaurant .restaurant:hover .fas {
     opacity: 1;
 }
@@ -202,7 +220,7 @@ aside .bloc-guide .guide span h3 {
 
 #restaurants .bloc-restaurant .restaurant a h3 {
     padding: 15px 0px 3px 10px;
-    font-weight: 900;
+    font-weight: 1000;
     font-size: 18px;
 }
 
@@ -222,6 +240,10 @@ footer {
     background-color: rgb(50 50 50);
     color: white;
 }
+
+footer .bloc-footer a:hover {
+    color: rgb(172, 164, 164);
+  } 
 
 footer .bloc-footer {
     width: 90%;
