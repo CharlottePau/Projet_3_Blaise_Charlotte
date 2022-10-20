@@ -118,6 +118,9 @@ header img {
 }
 
 .menu .bloc-menu .bloc-plat .plat .text h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-weight: 500;
     font-size: 17.5px;
     margin-bottom: 5px;
@@ -131,6 +134,8 @@ header img {
 }
 
 .menu .bloc-menu .bloc-plat .plat .text .align p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 14px;
     overflow: hidden;
 }
