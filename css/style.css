@@ -163,7 +163,10 @@ aside .bloc-guide .guide span h3 {
     margin: auto;
 }
 
-.fas {
+#restaurants .bloc-restaurant .restaurant:hover .fas {
+    transform: scale(1.015);
+    transition: 0.4s;
+    opacity: 1;
     color: transparent;
     background-image: linear-gradient(#ff79da, #9356dc);
     background-clip: text;
@@ -182,15 +185,6 @@ aside .bloc-guide .guide span h3 {
     background-color: white;
     position: relative;
     box-shadow: 0px 3px 15px -10px;
-}
-
-#restaurants .bloc-restaurant .restaurant:hover {
-    transform: scale(1.015);
-    transition: 0.4s;
-  }
-
-#restaurants .bloc-restaurant .restaurant:hover .fas {
-    opacity: 1;
 }
 
 #restaurants .bloc-restaurant .restaurant a {
