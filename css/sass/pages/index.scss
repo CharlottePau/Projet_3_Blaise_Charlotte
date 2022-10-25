@@ -213,23 +213,21 @@ aside .bloc-guide .guide span h3 {
     font-weight: 400;
 }
 
-#restaurants .bloc-restaurant .restaurant i {
+#restaurants .bloc-restaurant .restaurant .fa-heart {
     position: absolute;
     right: 20px;
     bottom: 40px;
-    cursor: pointer;
-    color: transparent;
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition: all 200ms ease-in-out;
 }
 
-.fa-heart {
+#restaurants .bloc-restaurant .restaurant .fa-heart:hover {
     cursor: pointer;
-  }
-  .fa-heart:hover {
-    color: linear-gradient(#ff79da, #9356dc);
-  }
+    color: transparent;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
 
 footer {
     background-color: rgb(50 50 50);
