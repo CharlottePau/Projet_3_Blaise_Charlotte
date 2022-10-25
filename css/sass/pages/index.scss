@@ -120,10 +120,11 @@ aside .bloc-guide .guide {
 
 aside .bloc-guide .guide:hover {
     background-color: rgb(247, 236, 255);
-  }
+}
+
   aside .bloc-guide .guide:hover i {
     color: #9356dc;
-  }
+}
 
 aside .bloc-guide .guide .round {
     color: white;
@@ -161,29 +162,6 @@ aside .bloc-guide .guide span h3 {
     gap: 20px;
     width: 90%;
     margin: auto;
-}
-
-.fa-heart {
-    color: transparent;
-    background-image: linear-gradient(0.45turn, #ff79da, #9356dc);
-    opacity: 0;
-}
-
-.fa-regular {
-    color: #3a3a3a;
-    opacity: 1;
-    transition: 0.3s ease-in;
-}
-
-#restaurants .bloc-restaurant .restaurant:hover {
-    transform: scale(1.015);
-    transition: 0.4s;
-    opacity: 1;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition: all 200ms ease-in-out;
 }
 
 
@@ -239,6 +217,12 @@ aside .bloc-guide .guide span h3 {
     position: absolute;
     right: 20px;
     bottom: 40px;
+    cursor: pointer;
+    color: transparent;
+    background-image: linear-gradient(0.45turn, #ff79da, #9356dc);
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
 }
 
 footer {
