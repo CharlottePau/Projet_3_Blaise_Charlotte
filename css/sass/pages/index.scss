@@ -54,7 +54,6 @@ header img {
 }
 
 .presentation p {
-    font-weight: bold;
     font-size: 18px;
     padding-bottom: 35px;
 }
@@ -72,7 +71,7 @@ header img {
     background: linear-gradient(#ff79da, #ff79da, #9356dc);
     box-shadow: 0px 10px 25px -10px;
     transition: 0.2s;
-  }
+}
 
 .btn a {
     text-decoration: none;
@@ -122,7 +121,7 @@ aside .bloc-guide .guide:hover {
     background-color: rgb(247, 236, 255);
 }
 
-  aside .bloc-guide .guide:hover i {
+aside .bloc-guide .guide:hover i {
     color: #9356dc;
 }
 
@@ -176,6 +175,11 @@ aside .bloc-guide .guide span h3 {
     box-shadow: 0px 3px 15px -10px;
 }
 
+#restaurants .bloc-restaurant .restaurant:hover {
+    transform: scale(1.015);
+    transition: 0.4s;
+}
+
 #restaurants .bloc-restaurant .restaurant a {
     text-decoration: none;
     color: black;
@@ -219,13 +223,64 @@ aside .bloc-guide .guide span h3 {
     bottom: 40px;
 }
 
-#restaurants .bloc-restaurant .restaurant .fa-heart:hover {
+.fa-heart {
     cursor: pointer;
-    color: transparent;
-    background-image: linear-gradient(#ff79da, #9356dc);
-    background-clip: text;
+}
+
+.fa-heart:hover {
+    color: #ff79da;
+}
+
+#heart:checked~label,
+#heart1:checked~label,
+#heart2:checked~label,
+#heart3:checked~label,
+#heart4:checked~label {
+    color: #9356dc;
+}
+
+#heart:checked~label .heart-full,
+#heart1:checked~label .heart-full,
+#heart2:checked~label .heart-full,
+#heart3:checked~label .heart-full,
+#heart4:checked~label .heart-full {
+    display: inline;
+}
+
+#heart:checked~label .heart-full::before,
+#heart1:checked~label .heart-full::before,
+#heart2:checked~label .heart-full::before,
+#heart3:checked~label .heart-full::before,
+#heart4:checked~label .heart-full::before {
+    display: inline;
+    position: relative;
+    background: linear-gradient(0deg, #ff79da, #9356dc);
     -webkit-background-clip: text;
-    opacity: 0;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fill 0.7s;
+}
+
+@keyframes fill {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.heart-full,
+.heart-full::before,
+#heart,
+#heart1,
+#heart2,
+#heart3,
+#heart4 {
+    display: none;
+    margin-left: -24px;
 }
 
 
@@ -236,7 +291,7 @@ footer {
 
 footer .bloc-footer a:hover {
     color: rgb(172, 164, 164);
-  } 
+}
 
 footer .bloc-footer {
     width: 90%;
