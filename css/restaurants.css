@@ -88,6 +88,33 @@ header img {
     right: 5%;
 }
 
+@keyframes appear {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+}
+
+.menu .bloc-menu .entree {
+    opacity: 0%;
+    animation: appear 0.5s none 0.75s;
+    animation-fill-mode: forwards;
+  }
+
+  .menu .bloc-menu .plats {
+    opacity: 0%;
+    animation: appear 0.75s none 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .menu .bloc-menu .desserts {
+    opacity: 0%;
+    animation: appear 0.75s none 2.25s;
+    animation-fill-mode: forwards;
+  }
+
 .menu .bloc-menu h2 {
     font-weight: 400;
     font-size: 16px;
@@ -209,7 +236,6 @@ header img {
     position: relative;
     background: linear-gradient(0deg, #ff79da, #9356dc);
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fill 0.7s;

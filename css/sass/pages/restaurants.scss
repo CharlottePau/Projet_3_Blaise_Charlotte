@@ -88,6 +88,21 @@ header img {
     right: 5%;
 }
 
+@keyframes appear {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+}
+
+.menu .bloc-menu .entree {
+    opacity: 0%;
+    animation: appear 0.5s none 0.75s;
+    animation-fill-mode: forwards;
+  }
+
 .menu .bloc-menu h2 {
     font-weight: 400;
     font-size: 16px;
