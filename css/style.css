@@ -255,8 +255,6 @@ aside .bloc-guide .guide span h3 {
     position: relative;
     background: linear-gradient(0deg, #ff79da, #9356dc);
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fill 0.7s;
 }
