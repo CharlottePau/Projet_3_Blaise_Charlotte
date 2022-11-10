@@ -50,6 +50,35 @@
     padding: 2.3px 0px;
 }
 
+@keyframes appear {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+}
+
+.menu .bloc-menu .entree {
+    opacity: 0%;
+    animation: appear 0.5s none 0.75s;
+    animation-fill-mode: forwards;
+  }
+
+  .menu .bloc-menu .plats {
+    opacity: 0%;
+    animation: appear 0.75s none 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .menu .bloc-menu .desserts {
+    opacity: 0%;
+    animation: appear 0.75s none 2.25s;
+    animation-fill-mode: forwards;
+  }
+
+/*THE "ROTATE" ANIMATION ALLOWS THE CHECK TO ROTATE*/
+
 .menu .bloc-menu .bloc-plat .plat:hover .center {
     animation: rotate 0.5s;
     animation-timing-function: ease-in-out;
@@ -88,6 +117,8 @@
     }
 }
 
+/*THE "CUT" ANIMATION ALLOWS THE TEXT TO DISAPPEAR IF IT'S TOO LONG*/
+
 .menu .bloc-menu .bloc-plat .plat:hover p,
 .menu .bloc-menu .bloc-plat .plat:hover h3 {
     animation: cut 0.5s;
@@ -104,24 +135,7 @@
     }
 }
 
-.menu .bloc-menu .bloc-plat .plat:not(:hover) .center {
-    animation: rotate-out 0.5s;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes rotate-out {
-    0% {
-        margin-right: -20px;
-        right: 40px;
-    }
-
-    100% {
-        margin-right: -45px;
-        right: 0px;
-    }
-}
+/*THE "TRANSLATE-OUT" ANIMATION ALLOWS THE CHECK TO DISAPPEAR SMOOTHLY*/
 
 .menu .bloc-menu .bloc-plat .plat:not(:hover) .padding {
     animation: translate-out 0.5s;
@@ -137,22 +151,5 @@
 
     100% {
         margin-right: -45px;
-    }
-}
-
-.menu .bloc-menu .bloc-plat .plat:not(:hover) p,
-.menu .bloc-menu .bloc-plat .plat:not(:hover) h3 {
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-    animation: uncut 0.5s;
-}
-
-@keyframes uncut {
-    0% {
-        width: 190px;
-    }
-
-    100% {
-        width: 250px;
     }
 }

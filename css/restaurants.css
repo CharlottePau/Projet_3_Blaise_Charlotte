@@ -11,25 +11,16 @@ header a i {
     left: 15px;
 }
 
-.fa-stack {
-    display: inline-block;
-    height: 2em;
-    line-height: 2em;
-    position: relative;
-    vertical-align: middle;
-    width: 2.5em;
-}
-
 .like .fa-solid {
     color: transparent;
-    background-image: linear-gradient(0.45turn, #ff79da, #9356dc);
+    background-image: linear-gradient(#ff79da, #9356dc);
     opacity: 0;
+    transition: 0.3s ease-in;
 }
 
 .like .fa-regular {
     color: #3a3a3a;
     opacity: 1;
-    transition: 0.3s ease-in;
 }
 
 header img {
@@ -87,33 +78,6 @@ header img {
     position: absolute;
     right: 5%;
 }
-
-@keyframes appear {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-      opacity: 100%;
-    }
-}
-
-.menu .bloc-menu .entree {
-    opacity: 0%;
-    animation: appear 0.5s none 0.75s;
-    animation-fill-mode: forwards;
-  }
-
-  .menu .bloc-menu .plats {
-    opacity: 0%;
-    animation: appear 0.75s none 1.5s;
-    animation-fill-mode: forwards;
-  }
-
-  .menu .bloc-menu .desserts {
-    opacity: 0%;
-    animation: appear 0.75s none 2.25s;
-    animation-fill-mode: forwards;
-  }
 
 .menu .bloc-menu h2 {
     font-weight: 400;
@@ -211,14 +175,6 @@ header img {
     color: #ff79da;
 }
 
-#heart:checked~label,
-#heart1:checked~label,
-#heart2:checked~label,
-#heart3:checked~label,
-#heart4:checked~label {
-    color: #ff79da;
-}
-
 #heart:checked~label .heart-full,
 #heart1:checked~label .heart-full,
 #heart2:checked~label .heart-full,
@@ -234,7 +190,7 @@ header img {
 #heart4:checked~label .heart-full::before {
     display: inline;
     position: relative;
-    background: linear-gradient(0deg, #ff79da, #9356dc);
+    background: linear-gradient(#ff79da, #9356dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fill 0.7s;
