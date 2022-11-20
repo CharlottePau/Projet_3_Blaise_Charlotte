@@ -227,9 +227,6 @@ aside .bloc-guide .guide span h3 {
     cursor: pointer;
 }
 
-.fa-heart:hover {
-    color: #ff79da;
-}
 
 #heart:checked~label,
 #heart1:checked~label,
@@ -260,6 +257,38 @@ aside .bloc-guide .guide span h3 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fill 0.7s;
+}
+
+
+#heart:hover~label .heart-full::before,
+#heart1:hover~label .heart-full::before,
+#heart2:hover~label .heart-full::before,
+#heart3:hover~label .heart-full::before,
+#heart4:hover~label .heart-full::before {
+    display: inline;
+    position: relative;
+    background: linear-gradient(0deg, #ff79da, #9356dc);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fill 0.7s;
+}
+
+#heart:hover~label,
+#heart1:hover~label,
+#heart2:hover~label,
+#heart3:hover~label,
+#heart4:hover~label {
+    color: #9356dc;
+}
+
+#heart:hover~label .heart-full,
+#heart1:hover~label .heart-full,
+#heart2:hover~label .heart-full,
+#heart3:hover~label .heart-full,
+#heart4:hover~label .heart-full {
+    display: inline;
 }
 
 @keyframes fill {

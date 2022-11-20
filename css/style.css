@@ -227,7 +227,8 @@ aside .bloc-guide .guide span h3 {
 }
 
 .fa-heart:hover {
-    color: #9356dc;
+    animation: fill 0.7s;
+    color: linear-gradient(#ff79da, #9356dc);
 }
 
 #heart:checked~label,
